@@ -5,7 +5,9 @@
 </div>
 
 ## Objective  
-The objective of this project is to train and test a U-Net semantic segmentation model on a Horizon Dataset by Exail Technologies.
+The objective of this project is to train and test a U-Net semantic segmentation model on a Horizon Dataset by Exail Technologies. The network will process infrared images captured by a camera mounted on an autonomous drone boat. The purpose of the segmentation task is to distinguish the sea from the sky. This segmentation will serve two primary purposes:
+- Filtering out detections located in the sky.
+- Calculating the distance of a detection relative to the camera based on its distance from the horizon.
 
 ## Overview  
 U-Net is a convolutional neural network architecture designed for image segmentation tasks. It was originally developed for biomedical image segmentation but has since been widely used in various fields, such as medical imaging, satellite imagery, and object segmentation. The key advantage of U-Net is its ability to efficiently capture both spatial and contextual information using its encoder-decoder structure.
